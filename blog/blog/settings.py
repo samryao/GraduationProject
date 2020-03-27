@@ -52,11 +52,10 @@ MIDDLEWARE = [
     # 'app01.utils.middleware.CorsMiddleware'
 ]
 
-
 # 跨域增加忽略
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = '*'
+# CORS_ORIGIN_WHITELIST = '*'
 
 CORS_ALLOW_METHODS = (
     'DELETE',
@@ -160,6 +159,6 @@ AUTH_USER_MODEL = 'app01.UserInfo'
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,"static")
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
 ]
